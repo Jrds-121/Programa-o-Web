@@ -40,25 +40,39 @@ entrada.addEventListener ("keydown", function(event){
     };
 });
 
-// adicionar novo item
 let addLista = document.getElementById("addLista");
 let seleção = document.getElementById("seleção");
 let lista = document.getElementById("lista");
-let listaOrdenada;
-let listaNOrdenada
-let novaLista;
 
-addLista.addEventListener ("click", function(){
-    if (seleção.value === "ol"){
-        listaOrdenada = document.createElement("ol")
-        listaOrdenada.textContent = seleção.value
-        lista.appendChild(listaOrdenada)
+addLista.addEventListener("click", function () {
+    let novaLista;
 
-        for (let i=1; i<=3; i++){
-
-        }
-        
+    if (seleção.value === "ol") {
+        novaLista = document.createElement("ol");
     } else {
-
+        novaLista = document.createElement("ul");
     }
+
+    for (let i = 1; i <= 3; i++) {
+        let item = document.createElement("li");
+        item.textContent = "Item " + i;
+        novaLista.appendChild(item);
+    }
+
+    lista.appendChild(novaLista);
+});
+
+// botão de reset
+let reset = document.getElementById("reset");
+
+reset.addEventListener("click", function () {
+    contador = 0;
+    resNum.textContent = contador;
+
+    entrada.value = "";
+    contador2 = 0;
+    resCarac.textContent = contador2;
+
+    textos.innerHTML = "";
+    lista.innerHTML = "";
 });
