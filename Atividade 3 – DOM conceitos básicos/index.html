@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Conceitos Básicos</title>
+</head>
+<body>
+    <h1>DOM: Página Interativa com JavaScritp</h1>
+
+
+        <!-- contador de cliques -->
+
+        <hr>
+        <h2>Contador de cliques</h2>
+        <button type="button" id="inc">Incrementar</button>
+        <button type="button" id="dec">Decrementar</button>
+        <p id="resNum">0</p>
+        <br>
+        
+        <!-- textos dinamicos / contador de caracteres -->
+
+        <hr>
+        <h2>Textos dinamicos</h2>
+        <input type="text" placeholder="Digite algo..." id="entrada">
+        <p><span id="resCarac">0</span> caracteres</p>
+        <br>
+
+        <div id="textos"></div>
+
+        <br>
+
+        <!-- adicionar novo item -->
+
+        <hr>
+        <h2>Adicionar novo item</h2>
+        <select name="" id="seleção">
+        <option value="ul">Lista Não Ordenada</option>
+        <option value="ol">Lista Ordenada</option>
+
+        </select>
+        <button type="button" id="addLista">Adicionar Lista</button>
+        <div id="lista"></div>
+        <br> <br>
+        
+        <!-- botão reset -->
+        <hr>
+        <h2>Botão de reset</h2>
+        <button id="reset">Redefinir</button>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
