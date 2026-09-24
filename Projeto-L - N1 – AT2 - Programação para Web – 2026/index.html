@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="L&S Imports: camisas de futebol importadas com qualidade, conforto e ótimo preço." />
+  <title>L&amp;S Imports - Camisas de Futebol</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <div class="marca">
+        <img class="logo" src="imagens/LogoVetorizadodark.svg" alt="L&amp;S Imports" />
+      </div>
+      <button id="botaoCarrinho" class="botao-carrinho">
+        Carrinho <span id="contadorCarrinho" class="contador">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="banner" aria-label="Vista sua paixão: qualidade e conforto com o melhor preço"></section>
+
+  <section class="beneficio">
+    <div class="container beneficio-conteudo">
+      <p>Camisas importadas com qualidade premium</p>
+      <strong>10% de desconto acima de R$ 300,00</strong>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="filtros">
+      <input type="text" id="campoBusca" placeholder="Pesquisar camisa pelo nome..." />
+      <div id="listaCategorias" class="categorias"></div>
+    </section>
+
+    <section id="listaProdutos" class="grade-produtos"></section>
+    <p id="mensagemBusca" class="mensagem oculto"></p>
+  </main>
+
+  <aside id="painelCarrinho" class="painel-carrinho">
+    <div class="painel-topo">
+      <h2>Seu carrinho</h2>
+      <button id="fecharCarrinho" class="fechar">&times;</button>
+    </div>
+    <div id="itensCarrinho" class="itens-carrinho"></div>
+    <div class="resumo">
+      <div class="linha"><span>Itens</span><span id="totalItens">0</span></div>
+      <div class="linha"><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
+      <div class="linha desconto"><span>Desconto</span><span id="desconto">- R$ 0,00</span></div>
+      <div class="linha total"><span>Total</span><span id="valorFinal">R$ 0,00</span></div>
+      <button id="botaoFinalizar" class="botao-principal">Finalizar compra</button>
+    </div>
+  </aside>
+  <div id="fundoEscuro" class="fundo-escuro"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-caixa">
+      <h2 id="modalTitulo">Resumo da compra</h2>
+      <div id="modalConteudo"></div>
+      <div class="modal-acoes">
+        <button id="modalCancelar" class="botao-secundario">Voltar</button>
+        <button id="modalConfirmar" class="botao-principal">Confirmar compra</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <div class="container">
+      <img src="imagens/LogoVetorizadolight.svg" alt="L&amp;S Imports" />
+      <p>L&amp;S Imports &copy; 2026 - Loja fictícia criada para fins acadêmicos.</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
